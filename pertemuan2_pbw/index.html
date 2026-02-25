@@ -6,24 +6,32 @@
 
     <link rel="stylesheet" href="suratlp.css">
     <title>Surat Lamaran Pekerjaan</title>
+    <script>
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'F12') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.key === 'u') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+            event.preventDefault();
+        }
+    });
 
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
+</script>
     <!--Hayoh Ngapain :)-->
 </head>
 <body>
-
-        <script>
-      document.addEventListener('keydown', function (event) {
-          if (event.ctrlKey && event.key === 'u','i') {
-              event.preventDefault();
-          }
-      });
-  </script>
-  
-    <script>
-      document.addEventListener('contextmenu', function (event) {
-          event.preventDefault();
-      });
-  </script>
     <div class="pembungkus_utama">
         <h1>Lamaran Pekerjaan</h1>
 
