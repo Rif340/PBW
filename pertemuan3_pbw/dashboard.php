@@ -12,9 +12,25 @@ move_uploaded_file($tmp, "images/" . $foto_profile);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tampilan Codenya</title>
+
+    <!--Hayoh Ngapain :)-->
 </head>
 
 <body>
+        <script>
+      document.addEventListener('keydown', function (event) {
+          if (event.ctrlKey && event.key === 'u','i') {
+              event.preventDefault();
+          }
+      });
+  </script>
+  
+    <script>
+      document.addEventListener('contextmenu', function (event) {
+          event.preventDefault();
+      });
+  </script>
+    
     <center>
         <h3>Hasil nya disini</h3>
     </center>
