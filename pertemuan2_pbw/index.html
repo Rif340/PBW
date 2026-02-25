@@ -6,29 +6,73 @@
 
     <link rel="stylesheet" href="suratlp.css">
     <title>Surat Lamaran Pekerjaan</title>
+    
+    <!--Hayoh Ngapain :)-->
+  <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+        
+        input, select, textarea {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+    </style>
+    
     <script>
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'F12') {
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'F12' || 
+                (event.ctrlKey && event.shiftKey && event.key === 'I') ||
+                (event.ctrlKey && event.key === 'u') ||
+                (event.ctrlKey && event.shiftKey && event.key === 'J') ||
+                (event.ctrlKey && event.shiftKey && event.key === 'C')) {
+                event.preventDefault();
+                return false;
+            }
+            
+            if (event.ctrlKey && (event.key === 'a' || event.key === 'c' || event.key === 'x')) {
+                event.preventDefault();
+                return false;
+            }
+        });
+        
+        document.addEventListener('contextmenu', function (event) {
             event.preventDefault();
-        }
-        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            return false;
+        });
+        
+        document.addEventListener('dragstart', function(event) {
+            if (event.target.tagName === 'IMG') {
+                event.preventDefault();
+                return false;
+            }
+        });
+        
+        document.addEventListener('copy', function(event) {
             event.preventDefault();
-        }
-        if (event.ctrlKey && event.key === 'u') {
+            return false;
+        });
+        
+        document.addEventListener('cut', function(event) {
             event.preventDefault();
-        }
-        if (event.ctrlKey && event.shiftKey && event.key === 'J') {
-            event.preventDefault();
-        }
-        if (event.ctrlKey && event.shiftKey && event.key === 'C') {
-            event.preventDefault();
-        }
-    });
+            return false;
+        });
+    </script>
 
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-    });
-</script>
     <!--Hayoh Ngapain :)-->
 </head>
 <body>
