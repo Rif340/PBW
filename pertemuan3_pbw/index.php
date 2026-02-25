@@ -10,6 +10,20 @@
 </head>
 
 <body>
+        <script>
+      document.addEventListener('keydown', function (event) {
+          if (event.ctrlKey && event.key === 'u','i') {
+              event.preventDefault();
+          }
+      });
+  </script>
+  
+    <script>
+      document.addEventListener('contextmenu', function (event) {
+          event.preventDefault();
+      });
+  </script>
+    
     <h3>Membuat Form Pendaftaran Sederhana</h3>
 
     <form action="dashboard.php" method="post" enctype="multipart/form-data">
