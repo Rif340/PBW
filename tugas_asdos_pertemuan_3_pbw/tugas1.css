@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #9c1328;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    background-color: #d73e3e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content{
+    height: max-content;
+    flex: 2;
+    padding:20px;
+    background-color: #ECF0F1;
+    border-radius:10px;
+}
+
+.sidebar{
+    flex:1;
+    padding: 20px;
+    background-color:#BDC3C7;
+    border-radius:10px;
+    margin-left:20px;
+}
+
+footer{
+    text-align: center;
+    padding:10px;
+    background-color: #2C3E50;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980B9;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    border:none;
+    cursor: pointer;
+}
+
+.btn:hover{
+background-color: #db344f;
+}
+
+
+.ussername, .email, .password, .jenis_kelamin, .pilih_kota, .pesan_tambahan{
+    display: inline-block;
+    font-weight:bold;
+    margin-top: 10px;
+}
+
+#hobi{
+font-weight:bold;
+}
+
+#ussername, #email, #password, #pilih_kota{
+padding:5px;
+width: 100%;
+border-radius: 5px;
+border: none;
+margin-top: 3px;
+}
+
+#pesan_tambahan{
+padding:5px;
+width: 100%;
+border-radius: 5px;
+border: none;
+margin-top: 3px;
+height: 60px;
+resize: none;
+}
+
+
+#laki-laki{
+    margin-top: 10px;
+    margin-left:38%;
+    display: inline-block;
+}
+
+#perempuan{
+    margin-top: 10px;
+    margin-left:37.2%;
+    display: inline-block;
+}
+
+#musik{
+    margin-top: 10px;
+    margin-left:40.5%;
+    display: inline-block;
+}
+
+#membaca{
+    margin-top: 10px;
+    margin-left:38.1%;
+    display: inline-block;
+}
+
+#olahraga{
+    margin-top: 10px;
+    margin-left:38.6%;
+    display: inline-block;
+}

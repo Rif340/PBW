@@ -6,10 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Membuat Form Pendaftaran Sederhana</title>
 
+    <script>
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'F12') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.key === 'u') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+            event.preventDefault();
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
+</script>
+
     <!-- Hayoh ngapain :) -->
 </head>
 
 <body>
+<<<<<<< HEAD
         <script>
       document.addEventListener('keydown', function (event) {
           if (event.ctrlKey && event.key === 'u','i') {
@@ -24,6 +49,9 @@
       });
   </script>
     
+=======
+
+>>>>>>> 20a30eb (upload pertemuan 3 lanjutan  with asdos dan upload tugas dari asdos)
     <h3>Membuat Form Pendaftaran Sederhana</h3>
 
     <form action="dashboard.php" method="post" enctype="multipart/form-data">

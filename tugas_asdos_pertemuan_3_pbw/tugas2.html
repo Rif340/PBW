@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas buat program javascript sederhana</title>
+
+    <link rel="stylesheet" href="tugas2.css" />
+  </head>
+  <body>
+    <form action="">
+      <center><h2>Cek Nilai Mahasiswa</h2></center>
+      <br />
+      <label for="">Masukan nim :</label><br />
+      <input
+        id="nim"
+        type="number"
+        maxlength="13"
+        placeholder="maksimal 13 huruf"
+      /><br />
+
+      <label for="">Masukan Nilai :</label><br />
+      <input type="number" min="0" max="100" id="nilai" /> <br />
+
+      <button type="button" id="cek">Cek Kriteria</button>
+
+      <p>Berikut ini adalah hasilnya :</p>
+
+      <div class="hasil" id="hasil" aria-placeholder="hasilnya"></div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
