@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding:0px;
+    
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pembungkus_utama{
+    width: max-content;
+    height: 200px;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 7px;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+hr{
+    height:2px;
+    background-color:black;
+    border:none;
+}
