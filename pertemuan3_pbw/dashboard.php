@@ -13,11 +13,7 @@ move_uploaded_file($tmp, "images/" . $foto_profile);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tampilan Codenya</title>
 
-<<<<<<< HEAD
     <!--Hayoh Ngapain :)-->
-=======
-    <!-- Hayoh Ngapain :) -->
->>>>>>> 20a30eb (upload pertemuan 3 lanjutan  with asdos dan upload tugas dari asdos)
 </head>
 
 <body>
@@ -34,11 +30,7 @@ move_uploaded_file($tmp, "images/" . $foto_profile);
           event.preventDefault();
       });
   </script>
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 20a30eb (upload pertemuan 3 lanjutan  with asdos dan upload tugas dari asdos)
     <center>
         <h3>Hasil nya disini</h3>
     </center>
