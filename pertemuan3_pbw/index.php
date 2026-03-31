@@ -34,7 +34,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
         <script>
       document.addEventListener('keydown', function (event) {
           if (event.ctrlKey && event.key === 'u','i') {
@@ -49,9 +48,7 @@
       });
   </script>
     
-=======
 
->>>>>>> 20a30eb (upload pertemuan 3 lanjutan  with asdos dan upload tugas dari asdos)
     <h3>Membuat Form Pendaftaran Sederhana</h3>
 
     <form action="dashboard.php" method="post" enctype="multipart/form-data">
