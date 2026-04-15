@@ -23,7 +23,7 @@
 
         <?php
 
-        if (!empty($_POST['nama']) && !empty($_POST['nilai'])) {
+        if (isset($_POST['nama']) && isset($_POST['nilai'])) {
 
             echo "<br> <hr>";
             echo "Nama : " . htmlspecialchars($_POST['nama']) . "<br>";

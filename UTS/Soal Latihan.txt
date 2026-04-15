@@ -1,0 +1,14 @@
+Sebuah koperasi mahasiswa ingin membuat aplikasi mini pendaftaran belanja alat tulis berbasis web. Buat satu halaman form HTML (boleh dengan CSS sederhana) dan satu halaman proses PHP.
+
+ Form minimal memuat:
+
+nama mahasiswa, NIM, email, jenis layanan (Reguler/Prioritas);
+pilihan barang (minimal 3 checkbox);
+jumlah tiap barang, serta metode pengambilan (GET / POST).
+Gunakan validasi HTML dasar: required, minlength/maxlength, type email, dan min untuk jumlah.
+Data dikirim menggunakan method POST. Di file PHP, olah input dengan variabel, gunakan satu konstanta PAJAK 15 persen, simpan harga barang dalam array, hitung subtotal, pajak, dan total akhir memakai operator aritmatika.
+Terapkan percabangan if-elseif-else untuk biaya layanan: Reguler gratis, Prioritas tambah biaya tetap.
+Tampilkan ringkasan hasil dalam format tabel HTML berisi data pemesan, daftar item dipilih, subtotal, pajak, biaya layanan, total, dan pesan status jika tidak ada barang dipilih.
+   
+Ketentuan Penilaian:
+Gunakan struktur HTML lengkap; gunakan action dan method dengan benar; gunakan $_POST; gunakan variabel, konstanta define(), array harga, operator + - * /, serta percabangan if-elseif-else; output rapi dan mudah dibaca.
