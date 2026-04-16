@@ -11,6 +11,8 @@
 
 <body>
 
+<?php include 'menu.php'; ?>
+
     <form action="" method="post">
         <center><h3>Form Soal 3</h3></center>
         <label for="">Masukan Hewan 1 :</label><br>

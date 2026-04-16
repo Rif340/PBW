@@ -10,6 +10,8 @@
 </head>
 
 <body>
+   <?php include 'menu.php'; ?>
+
    <form action="" method="post">
       <center><h3>Form Soal 1</h3></center>
       <label for="roda">Masukan Jumlah roda :</label><br>

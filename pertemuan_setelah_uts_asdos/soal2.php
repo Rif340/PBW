@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<?php include 'menu.php'; ?>
 
     <form action="" method="post">
         <center><h3>Form Soal 2</h3></center>
