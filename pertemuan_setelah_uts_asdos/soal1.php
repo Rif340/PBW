@@ -33,6 +33,7 @@
 
             case "4":
                echo "<br><br>" . "Mobil";
+               break;
 
             default:
                echo "<br><br>" . "Inputan Tidak Valid";

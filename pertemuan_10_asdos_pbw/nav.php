@@ -34,10 +34,7 @@
 
     <div class="pembungkus_utama">
         <ul>
-            <li><a href="soal1.php">Soal 1</a></li>
-            <li><a href="soal2.php">Soal 2</a></li>
-            <li><a href="soal3.php">Soal 3</a></li>
-            <li><a href="soal4.php">Soal 4</a></li>
-            <li><a href="index.php">Soal 5</a></li>
+            <li><a href="index.php">Beranda</a></li>
+            <li><a href="tambah.php">Tambah Buku</a></li>
         </ul>
     </div>
