@@ -45,7 +45,7 @@
         <label>Masukan Stok Buku :</label>
         <input type="number" name="stok" value="<?= $data['stok']; ?>">
 
-        <button type="submit">Kirim</button>
+       <button type="submit" name="submit">Kirim</button>
 
     </form>
 </body>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 22, 2026 at 02:55 PM
+-- Generation Time: Apr 23, 2026 at 05:53 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.30
 
@@ -41,9 +41,13 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `judul`, `penulis`, `tahun_terbit`, `harga`, `stok`) VALUES
-(7, 'The wealth of nation', 'Adam smith', 1800, 2000.00, 22),
-(8, 'The art of war', 'sun tzu', 1890, 5000.00, 40),
-(9, 'Madilog', 'Tan Malaka', 1975, 1000.00, 42);
+(7, 'The wealth of nation', 'Adam smith', 1800, 2000.00, 19),
+(8, 'The art of war', 'sun tzu', 1890, 5000.00, 34),
+(9, 'Madilog', 'Tan Malaka', 1975, 1000.00, 42),
+(14, 'The Prince', 'Niccolò Machiavelli', 1513, 1000.00, 23),
+(16, 'Don Quixote', 'Miguel de Cervantes', 1605, 2000.00, 20),
+(17, 'The Republic', 'Plato', 380, 1000.00, 23),
+(18, 'Metode Penelitian Kuantitatif Kualitatif Dan RnD', 'Prof.Dr.Sugiyono', 2013, 1000.00, 44);
 
 -- --------------------------------------------------------
 
@@ -57,6 +61,15 @@ CREATE TABLE `detail_pesanan` (
   `kuantitas` int NOT NULL,
   `harga_per_satuan` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `detail_pesanan`
+--
+
+INSERT INTO `detail_pesanan` (`pesanan_id`, `buku_id`, `kuantitas`, `harga_per_satuan`) VALUES
+(1, 7, 3, 2000),
+(2, 8, 6, 5000),
+(3, 16, 12, 2000);
 
 -- --------------------------------------------------------
 
@@ -72,6 +85,15 @@ CREATE TABLE `pelanggan` (
   `telepon` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `pelanggan`
+--
+
+INSERT INTO `pelanggan` (`id`, `nama`, `alamat`, `email`, `telepon`) VALUES
+(1, 'Asep Racing', 'Jln. Maju Mundur Yang Penting Nyampe', 'Asepudin340@gmail.com', '085888060024'),
+(2, 'Maman Bit Karbu', 'Jln. Mangga Tiga Kebayoran Lama', 'mamankarbu340@gmail.id.com', '085888060024'),
+(3, 'Ucok Tambal Ban', 'Jln. Belok Ke Kanan Abis Itu Lurus Aja Nah Kalo Ada Kali Lompat Aja', 'Ucoktambalban340@gmail.com', '085888060024');
+
 -- --------------------------------------------------------
 
 --
@@ -84,6 +106,15 @@ CREATE TABLE `pesanan` (
   `pelanggan_id` int NOT NULL,
   `total_harga` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `pesanan`
+--
+
+INSERT INTO `pesanan` (`id`, `tanggal_pesanan`, `pelanggan_id`, `total_harga`) VALUES
+(1, '2026-04-23', 1, 6000.00),
+(2, '2026-04-23', 2, 30000.00),
+(3, '2026-04-23', 3, 24000.00);
 
 --
 -- Indexes for dumped tables
@@ -123,19 +154,19 @@ ALTER TABLE `pesanan`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
