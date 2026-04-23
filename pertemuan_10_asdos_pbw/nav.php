@@ -1,40 +1,36 @@
+<style>
+.navbar .nav-link{
+    color: white !important;
+}
 
+.navbar .nav-link:hover{
+    color: blue !important;
+}
+</style>
 
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: salmon;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Rif340 Buku</a>
 
-        .pembungkus_utama{
-            width: 100%;
-        }
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        ul {
-            list-style: none;
-            display: flex;
-            width: 100%;
-            background-color: salmon;
-            padding: 10px;
-            justify-content: space-around;
-            box-shadow: 0px 0.3px black;
-        }
-
-        ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-
-        ul li a:hover {
-            color: blue;
-        }
-    </style>
-
-
-    <div class="pembungkus_utama">
-        <ul>
-            <li><a href="index.php">Beranda</a></li>
-            <li><a href="tambah.php">Tambah Buku</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Daftar Buku</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tambah.php">Tambah Buku</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="transaksi.php">Buat Pesanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lihat_transaksi.php">Lihat Transaksi</a>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>

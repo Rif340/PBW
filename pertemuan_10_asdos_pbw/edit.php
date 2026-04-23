@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From Update Buku</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,27 +26,27 @@
 
     <form action="proses_edit.php" method="post">
 
-        <center><h3>Form Update Buku</h3></center><br>
+        <h3>Form Update Buku</h3>
 
         <input type="hidden" name="id" value="<?= $data['id']; ?>">
 
-        <label for="buku">Masukan Nama Buku :</label><br>
-        <input type="text" name="judul" value="<?= $data['judul']; ?>"> <br><br>
+        <label>Masukan Nama Buku :</label>
+        <input type="text" name="judul" value="<?= $data['judul']; ?>">
 
-        <label for="penulis">Masukan Nama Penulis :</label><br>
-        <input type="text" name="penulis" value="<?= $data['penulis']; ?>"> <br><br>
+        <label>Masukan Nama Penulis :</label>
+        <input type="text" name="penulis" value="<?= $data['penulis']; ?>">
 
-        <label for="tahun">Masukan Tahun Terbit :</label><br>
-        <input type="number" name="tahun_terbit" value="<?= $data['tahun_terbit']; ?>"><br><br>
+        <label>Masukan Tahun Terbit :</label>
+        <input type="number" name="tahun_terbit" value="<?= $data['tahun_terbit']; ?>">
 
-        <label for="harga">Masukan Harga Buku :</label><br>
-        <input type="number" name="harga" value="<?= $data['harga']; ?>"><br><br>
+        <label>Masukan Harga Buku :</label>
+        <input type="number" name="harga" value="<?= $data['harga']; ?>">
 
-        <label for="stok">Masukan Stok Buku :</label><br>
-        <input type="number" name="stok" value="<?= $data['stok']; ?>"> <br><br>
+        <label>Masukan Stok Buku :</label>
+        <input type="number" name="stok" value="<?= $data['stok']; ?>">
 
+        <button type="submit">Kirim</button>
 
-        <button type="submit" name="submit">Kirim</button>
     </form>
 </body>
 
