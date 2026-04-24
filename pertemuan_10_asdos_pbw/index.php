@@ -186,12 +186,6 @@ while ($row = $result->fetch_assoc()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- js boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-
-    <!-- css boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Daftar Buku</title>
 </head>
 
@@ -268,35 +262,37 @@ while ($row = $result->fetch_assoc()) {
             </div>
         </form>
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Id Buku</th>
-                    <th>Judul</th>
-                    <th>Penulis</th>
-                    <th>Tahun</th>
-                    <th>Harga</th>
-                    <th class="text-center">Aksi</th>
-                </tr>
-            </thead>
-
-            <tbody>
-            <tbody>
-                <?php foreach ($data as $row): ?>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
                     <tr>
-                        <td><?= $row['id'] ?></td>
-                        <td><?= htmlspecialchars($row['judul']) ?></td>
-                        <td><?= htmlspecialchars($row['penulis']) ?></td>
-                        <td><?= $row['tahun_terbit'] ?></td>
-                        <td><?= $row['harga'] ?></td>
-                        <td class="text-center">
-                            <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="hapus.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">Hapus</a>
-                        </td>
+                        <th>Id Buku</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Harga</th>
+                        <th class="text-center">Aksi</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+                </thead>
+
+                <tbody>
+                <tbody>
+                    <?php foreach ($data as $row): ?>
+                        <tr>
+                            <td><?= $row['id'] ?></td>
+                            <td><?= htmlspecialchars($row['judul']) ?></td>
+                            <td><?= htmlspecialchars($row['penulis']) ?></td>
+                            <td><?= $row['tahun_terbit'] ?></td>
+                            <td><?= $row['harga'] ?></td>
+                            <td class="text-center">
+                                <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="hapus.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">Hapus</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
 
 
         <ul class="pagination justify-content-center mt-4">
