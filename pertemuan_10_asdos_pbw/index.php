@@ -276,7 +276,6 @@ while ($row = $result->fetch_assoc()) {
                 </thead>
 
                 <tbody>
-                <tbody>
                     <?php foreach ($data as $row): ?>
                         <tr>
                             <td><?= $row['id'] ?></td>
@@ -328,3 +327,4 @@ while ($row = $result->fetch_assoc()) {
 </body>
 
 </html>
+<?php $conn->close(); ?>

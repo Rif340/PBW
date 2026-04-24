@@ -15,3 +15,4 @@ if (!empty($search_tahun)) {
 }
 
 $result = $conn->query($query);
+$conn->close(); 

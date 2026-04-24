@@ -17,7 +17,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: salmon;">
     <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Rif340 Buku</a>
+        <a class="navbar-brand text-white" href="index.php">Rif340 Buku</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>

@@ -24,5 +24,5 @@ if ($stmt->execute()) {
         header("location:index.php?status=gagal");
     }
     exit;
-
+$conn->close();
 ?>

@@ -74,3 +74,4 @@ $pelanggan_result = $conn->query("SELECT id, nama FROM pelanggan");
 </body>
 
 </html>
+<?php $conn->close(); ?>
